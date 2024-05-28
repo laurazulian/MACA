@@ -24,8 +24,26 @@
     </header>
     <main>
         <section id="contacto">
-            <h2>Contacto</h2>
-            <!-- Contenido de Contacto -->
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <p><em>Please fill out the form below to send us an email.</em></p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p><strong>E-mail:</strong> <br>hello@reallygreatsite.com</p>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
         </section>
     </main>
     <script src="script.js"></script>

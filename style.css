@@ -176,3 +176,132 @@ section {
         margin: 10px 0;
     }
 }
+
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 45%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card p {
+    padding: 0 15px 15px;
+    color: #666;
+}
+
+.card:nth-child(odd) {
+    align-self: flex-start;
+}
+
+.card:nth-child(even) {
+    align-self: flex-end;
+}
+
+/* Responsive Styles for Cards */
+@media (max-width: 768px) {
+    .card-container {
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+/* Contact Section */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 2em;
+}
+
+.contact-info em {
+    font-style: italic;
+    color: #666;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 45%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f0f0f0;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info,
+    .contact-form {
+        max-width: 100%;
+    }
+}
