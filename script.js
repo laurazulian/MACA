@@ -55,3 +55,12 @@ function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(email);
 }
+
+// selector
+const menuButton = document.querySelector('.button-menu');
+    const mainNav = document.querySelector('.main-nav');
+    
+    menuButton.addEventListener('click', function() {
+        mainNav.classList.toggle('show');
+        menuButton.classList.toggle('close');
+    });
